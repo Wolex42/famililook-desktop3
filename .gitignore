@@ -1,9 +1,0 @@
-﻿__pycache__/
-*.pyc
-.venv/
-artifacts/
-curated/good_frontal_*/
-curated/final_*/
-curated/*/unique*/
-curated/removed_outliers_*/
-.insightface/

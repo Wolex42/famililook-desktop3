@@ -1,0 +1,18 @@
+﻿provider: auto            # 'cuda'|'cpu'|'auto'
+device_id: 0
+
+detector:
+  det_size: [512, 512]
+  retry_det_size: [800, 800]
+
+  # frontal/quality guardrails
+  roll_max: 6
+  asym_max: 0.20
+  yaw_max: 12
+  min_face_ratio: 0.14
+  min_det_conf: 0.55
+  min_sharp: 150
+  dark_glasses_thr: 0.75
+  no_multiface: true   # reject images with != 1 face
+
+# recognition model is the default from InsightFace (w600k_r50)

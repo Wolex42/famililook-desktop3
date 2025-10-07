@@ -1,33 +1,9 @@
-# Python
-__pycache__/
+﻿__pycache__/
 *.pyc
-*.pyo
-*.pyd
-*.egg-info/
 .venv/
-.env
-
-# IDE
-.vscode/
-.idea/
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Project artifacts (large / generated)
 artifacts/
-
-# Curated images (very large – keep code-only in repo)
 curated/good_frontal_*/
 curated/final_*/
 curated/*/unique*/
 curated/removed_outliers_*/
-
-# Logs & temp
-*.log
-*.tmp
-*.bak
-
-# Model caches
 .insightface/

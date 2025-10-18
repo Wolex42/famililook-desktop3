@@ -1,0 +1,44 @@
+﻿# Replace .gitignore entirely with this clean version
+@"
+# Python
+__pycache__/
+*.py[cod]
+.Python
+*.so
+.venv/
+.venv311/
+venv/
+env/
+
+# Training/Curation Data - NOT NEEDED FOR SERVER
+artifacts/
+curated/
+Data_merged/
+analytics_data/
+familook/
+famililook/
+scripts/
+tests/
+test_*/
+_salvage/
+ui_bridge/
+
+# Development files - NOT NEEDED FOR SERVER
+*.bat
+*survey*
+load_models.py
+view_analytics.py
+project_survey.py
+pytest.ini
+security-config.json
+*.onnx
+
+# Models (downloaded at runtime)
+.insightface/
+models/
+
+# IDE/OS
+.vscode/
+.DS_Store
+*.swp
+"@ | Out-File -FilePath .gitignore -Encoding utf8

@@ -21,19 +21,6 @@ SECRET_KEY = os.getenv("SECRET_KEY", "dev-only-not-for-production")
 from fastapi import FastAPI, File, Form, HTTPException, UploadFile, Request
 from fastapi.middleware.cors import CORSMiddleware
 
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",
-        "http://localhost:5174",
-        "http://localhost:3000",
-        "https://famililook-desktop2.vercel.app",  # Your Vercel URL
-        "https://*.vercel.app",  # All Vercel preview deployments
-    ],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
 from fastapi.responses import JSONResponse
 
 from .analytics import analytics
